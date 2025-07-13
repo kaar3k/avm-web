@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVM Comfort Inn - Premier Hotel in Koramangala, Bengaluru | Boutique Hotel</title>
+    <!-- Optimized Meta Description for SEO -->
+    <meta name="description" content="Discover AVM Comfort Inn, a premier boutique hotel in Koramangala, Bengaluru. Offering spacious Deluxe Rooms, modern amenities, in-house dining, and a fitness center for business and leisure travelers. Book your comfortable stay today!">
+    <meta name="keywords" content="Hotels in Koramangala, Boutique hotel Bangalore, Corporate Guest house Koramangala, Clean hotel Koramangala, AVM Comfort Inn, hotel Bangalore, Bengaluru accommodation, business travel, leisure stay, comfortable rooms, modern amenities, fitness center, in-house dining">
+    <!-- Canonical URL to prevent duplicate content issues -->
+    <link rel="canonical" href="https://avmcomfortinn.in/index.html">
+    
+    <!-- Open Graph Meta Tags (already good for social sharing) -->
     <meta property="og:title" content="AVM Comfort Inn - Premier Hotel in Koramangala, Bengaluru" />
-    <meta property="og:description" content="Discover AVM Comfort Inn, a clean corporate hotel in Koramangala, Bengaluru. Ideal for business and leisure, offering spacious Deluxe Rooms, modern amenities, and in-house dining for a comfortable stay." />
+    <meta property="og:description" content="AVM Comfort Inn offers a comfortable and convenient stay in Koramangala, Bengaluru. Our boutique hotel features spacious Deluxe Rooms, modern amenities, and in-house dining for a comfortable stay." />
     <meta property="og:image" content="https://avmcomfortinn.in/images/PXL_20250503_100558100.jpg" />
     <meta property="og:url" content="https://avmcomfortinn.in/index.html" />
     <meta property="og:type" content="hotel" />
     <meta property="og:site_name" content="AVM Comfort Inn" />
     <meta property="og:locale" content="en_IN" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVM Comfort Inn - Premier Hotel in Koramangala, Bengaluru | Corporate Guest House</title>
-    <meta name="description" content="Discover AVM Comfort Inn, a clean and luxurious hotel in Koramangala, Bengaluru. Ideal for business and leisure, our corporate guest house offers spacious Deluxe Rooms, modern amenities, in-house dining, and a fitness center for a comfortable and convenient stay.">
-    <meta name="keywords" content="Hotels in Koramangala, Corporate Guest house Bangalore, Corporate Guest house Koramangala, Clean hotel in Koramangala, AVM Comfort Inn, hotel Koramangala, Bengaluru hotels, corporate guest homes, luxury rooms Bangalore, business travel accommodation, leisure stay Bengaluru, best hotels Koramangala, furnished rooms Bangalore, hotel amenities Bangalore">
     <!-- Tailwind CSS CDN - Loaded with defer for better performance -->
     <script src="https://cdn.tailwindcss.com" defer></script>
-    <link rel="icon" href="/images/icon.png">
+    <link rel="icon" href="images/icon.png">
     <!-- Google Fonts: Inter for body, Playfair Display for headings -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -46,25 +51,34 @@
         .hero-overlay {
             position: absolute;
             inset: 0;
-            background-color: rgba(29, 28, 28, 0.5); /* Reverted to original opacity */
+            background-color: rgba(29, 28, 28, 0.5);
             border-bottom-left-radius: 0.75rem; /* rounded-b-lg */
             border-bottom-right-radius: 0.75rem; /* rounded-b-lg */
         }
         /* Custom styling for subtle shadows and rounded corners */
         .card-shadow {
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Reverted to original shadow */
+            /* Updated box-shadow for a softer, more diffused look similar to Airbnb */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+        }
+        /* Gradient for booking buttons */
+        .btn-gradient {
+            background-image: linear-gradient(to right, #fbbf24, #f59e0b); /* Amber-500 to Amber-700 */
+        }
+        .btn-gradient:hover {
+            background-image: linear-gradient(to right, #f59e0b, #d97706); /* Darker amber on hover */
         }
     </style>
 </head>
 <body class="text-gray-800">
 
     <!-- Navigation Bar -->
-    <nav class="bg-white shadow-lg p-4 md:p-6 rounded-b-lg"> <!-- Reverted to original shadow -->
+    <nav class="bg-white shadow-lg p-4 md:p-6 rounded-b-lg">
         <div class="container mx-auto flex justify-between items-center flex-wrap">
             <!-- Logo -->
             <a href="#" class="flex items-center space-x-2">
-                <img src="images/avm-logo.jpg"AVM Comfort Inn Logo" width="130" height="40" > <!-- Removed opacity -->
-                <!-- <span class="text-amber-800 text-2xl font-bold font-playfair tracking-wide">AVM Comfort Inn</span> <!-- Removed opacity -->
+                <img src="images/avm-logo.jpg" alt="AVM Comfort Inn Logo" width="130" height="40">
+                <!-- The original index.html had the span commented out, so keeping it commented as per reference -->
+                <!-- <span class="text-amber-800 text-2xl font-bold font-playfair tracking-wide">AVM Comfort Inn</span> -->
             </a>
 
             <!-- Mobile Menu Button -->
@@ -78,7 +92,7 @@
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#home" class="text-gray-600 hover:text-amber-800 font-medium transition duration-300 ease-in-out">Home</a> <!-- Reverted to original gray -->
+                <a href="#home" class="text-gray-600 hover:text-amber-800 font-medium transition duration-300 ease-in-out">Home</a>
                 <a href="#about" class="text-gray-600 hover:text-amber-800 font-medium transition duration-300 ease-in-out">About Us</a>
                 <a href="#gallery" class="text-gray-600 hover:text-amber-800 font-medium transition duration-300 ease-in-out">Gallery</a>
                 <a href="#services" class="text-gray-600 hover:text-amber-800 font-medium transition duration-300 ease-in-out">Services</a>
@@ -99,11 +113,13 @@
     </nav>
 
     <!-- Hero Section (Carousel) -->
-    <section id="home" class="relative overflow-hidden py-20 md:py-24 lg:py-32 rounded-b-lg mx-4 mt-4 h-[400px] md:h-[500px] lg:h-[600px]"> <!-- Reverted vertical padding -->
+    <section id="home" class="relative overflow-hidden py-20 md:py-24 lg:py-32 rounded-b-lg mx-4 mt-4 h-[400px] md:h-[500px] lg:h-[600px]">
         <!-- Carousel Slides -->
-        <div class="hero-slide active" style="background-image: url('images/PXL_20250503_100558100.jpg');"></div>
-        <div class="hero-slide" style="background-image: url('images/PXL_20250503_100715956.jpg');"></div>
-        <div class="hero-slide" style="background-image: url('images/PXL_20250503_101139598.jpg');"></div>
+        <!-- First hero slide loads eagerly with high priority -->
+        <div class="hero-slide active" style="background-image: url('images/PXL_20250503_100558100.jpg');" loading="eager" fetchpriority="high"></div>
+        <!-- Subsequent hero slides load lazily -->
+        <div class="hero-slide" style="background-image: url('images/PXL_20250503_100715956.jpg');" loading="lazy"></div>
+        <div class="hero-slide" style="background-image: url('images/PXL_20250503_101139598.jpg');" loading="lazy"></div>
 
         <!-- Overlay for text readability -->
         <div class="hero-overlay rounded-b-lg"></div>
@@ -111,8 +127,8 @@
         <!-- Text Content -->
         <div class="relative z-10 text-white text-center flex flex-col items-center justify-center h-full px-4">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4 font-playfair">Your Comfort, Our Priority</h1>
-            <p class="text-md md:text-lg max-w-xl mx-auto">Experience a relaxing stay at AVM Comfort Inn, Koramangala.</p> <!-- Removed opacity -->
-            <a href="#booking" class="mt-6 inline-block bg-amber-700 hover:bg-amber-800 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105 card-shadow">Book Now</a> <!-- Reverted to original button style -->
+            <p class="text-md md:text-lg max-w-xl mx-auto">Experience a relaxing stay at AVM Comfort Inn, Koramangala.</p>
+            <a href="#booking" class="mt-6 inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 ease-in-out card-shadow">Book Now</a>
         </div>
 
         <!-- Carousel Navigation Dots -->
@@ -124,62 +140,64 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="container mx-auto px-4 py-16 md:py-24"> <!-- Reverted vertical padding -->
-        <div class="flex flex-col md:flex-row items-center md:space-x-12">
-            <div class="md:w-1/2 mb-8 md:mb-0">
-                <img src="images/img-exterior.jpg" alt="Exterior view of AVM Comfort Inn, a corporate guest house in Koramangala, Bengaluru" width="600" height="400" class="rounded-xl card-shadow w-full h-auto object-cover" loading="lazy">
-            </div>
-            <div class="md:w-1/2">
+    <section id="about" class="container mx-auto px-4 py-16 md:py-24 bg-stone-100 rounded-lg">
+        <div class="flex flex-col md:flex-row items-center md:space-x-16">
+            <div class="md:w-3/5 order-2 md:order-1">
                 <h2 class="text-3xl md:text-4xl font-bold text-amber-800 mb-6 font-playfair">About AVM Comfort Inn</h2>
                 <p class="text-lg leading-relaxed mb-4 text-gray-800">
-                    AVM Comfort Inn is ideally situated in Koramangala, one of Bengaluru's most vibrant and tech-savvy neighborhoods, making it a premier choice for both business and leisure travelers. As a leading <strong>corporate guest house in Koramangala</strong>, we offer 22 spacious Deluxe Rooms, each thoughtfully designed to provide a comfortable and relaxing stay.
+                    AVM Comfort Inn is ideally situated in Koramangala, one of Bengaluru's most vibrant and tech-savvy neighborhoods, making it a premier choice for both business and leisure travelers. As a leading <strong>boutique hotel in Koramangala</strong>, we offer 22 spacious Deluxe Rooms, each thoughtfully designed to provide a comfortable and relaxing stay.
                 </p>
                 <p class="text-lg leading-relaxed text-gray-800">
                     Our rooms span 180 sq. ft. and feature modern decor, a comfortable bed, chair, spacious work desk, LED SMART TV, telephone, and high-speed complimentary Wi-Fi. For your convenience, each room also includes a tea/coffee maker, ironing facilities, ample power outlets, and an in-room safe for valuables, ensuring a <strong>clean hotel in Koramangala</strong> experience.
                 </p>
             </div>
+            <div class="md:w-2/5 mb-8 md:mb-0 order-1 md:order-2">
+                <!-- Image in About Us section loads lazily -->
+                <img src="images/img-exterior.jpg" alt="Exterior view of AVM Comfort Inn, a boutique hotel in Koramangala, Bengaluru" width="600" height="400" class="rounded-xl card-shadow w-full h-auto object-cover" loading="lazy">
+            </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="bg-stone-100 py-16 md:py-24 rounded-lg mx-4"> <!-- Reverted vertical padding -->
+    <section id="gallery" class="bg-stone-100 py-16 md:py-24 rounded-lg mx-4">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-amber-800 mb-12 font-playfair">Our Photo Gallery</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105"> <!-- Reverted hover scale -->
-                    <img src="images/gallery-bed.jpg" alt="Comfortable king-size bed in a Deluxe Room at AVM Comfort Inn" width="400" height="300" class="w-full h-48 object-cover" loading="lazy">
+                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-lg transition duration-300 ease-in-out">
+                    <!-- Gallery images load lazily -->
+                    <img src="images/gallery-bed.jpg" alt="Comfortable king-size bed in a Deluxe Room at AVM Comfort Inn" width="400" height="300" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-110" loading="lazy">
                 </div>
-                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
-                    <img src="images/gallery-spacious.jpg" alt="Spacious Deluxe Room with modern furnishings, ideal for corporate guests" width="400" height="300" class="w-full h-48 object-cover" loading="lazy">
+                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-lg transition duration-300 ease-in-out">
+                    <img src="images/gallery-spacious.jpg" alt="Spacious Deluxe Room with modern furnishings, ideal for corporate guests" width="400" height="300" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-110" loading="lazy">
                 </div>
-                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
-                    <img src="images/gallery-bathroom.jpg" alt="Clean, modern bathroom with premium amenities at our Koramangala hotel" width="400" height="300" class="w-full h-48 object-cover" loading="lazy">
+                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-lg transition duration-300 ease-in-out">
+                    <img src="images/gallery-bathroom.jpg" alt="Clean, modern bathroom with premium amenities at our Koramangala hotel" width="400" height="300" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-110" loading="lazy">
                 </div>
-                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
-                    <img src="images/gallery-work-desk.jpg" alt="Ergonomic work desk with ample lighting for business travelers" width="400" height="300" class="w-full h-48 object-cover" loading="lazy">
+                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-lg transition duration-300 ease-in-out">
+                    <img src="images/gallery-work-desk.jpg" alt="Ergonomic work desk with ample lighting for business travelers" width="400" height="300" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-110" loading="lazy">
                 </div>
-                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
-                    <img src="images/gallery-cafeteria.jpg" alt="Comfortable seating in the in-house cafeteria, serving fresh meals" width="400" height="300" class="w-full h-48 object-cover" loading="lazy">
+                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-lg transition duration-300 ease-in-out">
+                    <img src="images/gallery-cafeteria.jpg" alt="Comfortable seating in the in-house cafeteria, serving fresh meals" width="400" height="300" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-110" loading="lazy">
                 </div>
-                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
-                    <img src="images/gallery-fitness.jpg" alt="Modern equipment in the hotel fitness center for your wellness routine" width="400" height="300" class="w-full h-48 object-cover" loading="lazy">
+                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-lg transition duration-300 ease-in-out">
+                    <img src="images/gallery-fitness.jpg" alt="Modern equipment in the hotel fitness center for your wellness routine" width="400" height="300" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-110" loading="lazy">
                 </div>
-                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
-                    <img src="images/gallery-exterior.jpg" alt="Front view of AVM Comfort Inn building, a top hotel in Koramangala" width="400" height="300" class="w-full h-48 object-cover" loading="lazy">
+                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-lg transition duration-300 ease-in-out">
+                    <img src="images/gallery-exterior.jpg" alt="Front view of AVM Comfort Inn building, a top hotel in Koramangala" width="400" height="300" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-110" loading="lazy">
                 </div>
-                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105">
-                    <img src="images/gallery-lift.jpg" alt="Spacious and naturally lit hotel lobby, welcoming guests" width="400" height="300" class="w-full h-48 object-cover" loading="lazy">
+                <div class="rounded-xl overflow-hidden card-shadow hover:shadow-lg transition duration-300 ease-in-out">
+                    <img src="images/gallery-lift.jpg" alt="Spacious and naturally lit hotel lobby, welcoming guests" width="400" height="300" class="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-110" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="container mx-auto px-4 py-16 md:py-24"> <!-- Reverted vertical padding -->
+    <section id="services" class="container mx-auto px-4 py-16 md:py-24">
         <h2 class="text-3xl md:text-4xl font-bold text-center text-amber-800 mb-12 font-playfair">Our Services & Amenities</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Service Card 1: Room Features -->
-            <div class="bg-white p-8 rounded-xl card-shadow hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 text-center">
+            <div class="bg-white p-8 rounded-xl card-shadow hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 text-center">
                 <div class="text-emerald-700 mb-4">
                     <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 003 14v1a1 1 0 001 1h12a1 1 0 001-1v-1a1 1 0 00-.293-.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 110-6 3 3 0 010 6z"></path></svg>
                 </div>
@@ -188,7 +206,7 @@
             </div>
 
             <!-- Service Card 2: Dining & Refreshments -->
-            <div class="bg-white p-8 rounded-xl card-shadow hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 text-center">
+            <div class="bg-white p-8 rounded-xl card-shadow hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 text-center">
                 <div class="text-emerald-700 mb-4">
                     <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM11 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2h-2zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2h-2z"></path></svg>
                 </div>
@@ -197,7 +215,7 @@
             </div>
 
             <!-- Service Card 3: Convenience & Wellness -->
-            <div class="bg-white p-8 rounded-xl card-shadow hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 text-center">
+            <div class="bg-white p-8 rounded-xl card-shadow hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 text-center">
                 <div class="text-emerald-700 mb-4">
                     <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17.555 17.168A1 1 0 0017 16H3a1 1 0 00-.555.168A2 2 0 002 18h16a2 2 0 00-.445-1.832z"></path></svg>
                 </div>
@@ -208,34 +226,35 @@
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="bg-stone-800 text-white py-16 md:py-24 rounded-lg mx-4 mb-4"> <!-- Reverted vertical padding -->
+    <section class="bg-stone-800 text-white py-16 md:py-24 rounded-lg mx-4 mb-4">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 font-playfair">Why Choose AVM Comfort Inn?</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="p-6 bg-stone-700 rounded-xl card-shadow">
                     <h3 class="text-2xl font-semibold mb-3">Prime Location</h3>
-                    <p class="text-stone-100">Nestled in Koramangala, Bengaluru's vibrant tech-savvy neighborhood, ideal for <strong>hotels in Koramangala</strong>.</p> <!-- Reverted text color -->
+                    <p class="text-stone-100">Nestled in Koramangala, Bengaluru's vibrant tech-savvy neighborhood, ideal for <strong>hotels in Koramangala</strong>.</p>
                 </div>
                 <div class="p-6 bg-stone-700 rounded-xl card-shadow">
                     <h3 class="text-2xl font-semibold mb-3">Exceptional Comfort</h3>
-                    <p class="text-stone-100">Spacious 180 sq. ft. Deluxe Rooms with modern amenities for a relaxing stay, a true <strong>corporate guest house Bangalore</strong> experience.</p> <!-- Reverted text color -->
+                    <p class="text-stone-100">Spacious 180 sq. ft. Deluxe Rooms with modern amenities for a relaxing stay, a true <strong>boutique hotel Bangalore</strong> experience.</p>
                 </div>
                 <div class="p-6 bg-stone-700 rounded-xl card-shadow">
                     <h3 class="text-2xl font-semibold mb-3">Comprehensive Facilities</h3>
-                    <p class="text-stone-100">From fitness center to in-house dining and 24/7 CCTV surveillance, ensuring a <strong>clean hotel in Koramangala</strong>.</p> <!-- Reverted text color -->
+                    <p class="text-stone-100">From fitness center to in-house dining and 24/7 CCTV surveillance, ensuring a <strong>clean hotel in Koramangala</strong>.</p>
                 </div>
                 <div class="p-6 bg-stone-700 rounded-xl card-shadow">
                     <h3 class="text-2xl font-semibold mb-3">Value-Added Services</h3>
-                    <p class="text-stone-100">Complimentary Wi-Fi, tea/coffee maker, ironing facilities, and doctor-on-call, making us a top <strong>corporate guest house Koramangala</strong>.</p> <!-- Reverted text color -->
+                    <p class="text-stone-100">Complimentary Wi-Fi, tea/coffee maker, ironing facilities, and doctor-on-call, making us a top <strong>boutique hotel Koramangala</strong>.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Google Map Section -->
-    <section id="location" class="container mx-auto px-4 py-16 md:py-24"> <!-- Reverted vertical padding -->
+    <section id="location" class="container mx-auto px-4 py-16 md:py-24">
         <h2 class="text-3xl md:text-4xl font-bold text-center text-amber-800 mb-12 font-playfair">Find Us on the Map</h2>
         <div class="max-w-4xl mx-auto rounded-xl overflow-hidden card-shadow">
+            <!-- Google Maps iframe loads lazily -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.547546878178!2d77.6227849750758!3d12.93677588737542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15da35e5556d%3A0xbb92a05b5ccfbf2c!2sAVM%20COMFORT%20INN!5e0!3m2!1sen!2sin!4v1752343379512!5m2!1sen!2sin"
                 width="100%"
@@ -249,31 +268,36 @@
     </section>
 
     <!-- Booking Links Section (with Thumbnails) -->
-    <section id="booking" class="bg-stone-100 py-16 md:py-24 rounded-lg mx-4"> <!-- Reverted vertical padding -->
+    <section id="booking" class="bg-stone-100 py-16 md:py-24 rounded-lg mx-4">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-amber-800 mb-8 font-playfair">Book Your Stay</h2>
             <div class="flex flex-col md:flex-row justify-center items-center gap-6">
                 <!-- Booking.com Thumbnail -->
-                <a href="https://www.booking.com/hotel/in/avm-comforts-inn-bangalore.en-gb.html?aid=356980" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 card-shadow space-y-2"> <!-- Reverted background, text color, hover -->
-                    <img src="https://placehold.co/100x60/003580/FFFFFF?text=Booking.com" alt="Book on Booking.com" width="100" height="60" class="rounded-md">
+                <a href="https://www.booking.com/hotel/in/avm-comforts-inn-bangalore.en-gb.html?aid=356980" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center btn-gradient text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 ease-in-out card-shadow transform hover:scale-105">
+                    <img src="https://placehold.co/100x60/003580/FFFFFF?text=Booking.com" alt="Book on Booking.com" width="100" height="60" class="rounded-md mb-2">
                     <span>Booking.com</span>
                 </a>
                 <!-- Agoda Thumbnail -->
-                <a href="https://www.agoda.com/en-in/avm-comforts-inn-bangalore/hotel/bangalore-in.html" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 card-shadow space-y-2">
-                    <img src="https://placehold.co/100x60/54A0FF/FFFFFF?text=Agoda" alt="Book on Agoda" width="100" height="60" class="rounded-md">
+                <a href="https://www.agoda.com/en-in/avm-comforts-inn-bangalore/hotel/bangalore-in.html" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center btn-gradient text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 ease-in-out card-shadow transform hover:scale-105">
+                    <img src="https://placehold.co/100x60/54A0FF/FFFFFF?text=Agoda" alt="Book on Agoda" width="100" height="60" class="rounded-md mb-2">
                     <span>Agoda</span>
                 </a>
                 <!-- MakeMyTrip Thumbnail -->
-                <a href="https://www.makemytrip.com/hotels/avm_comforts_inn_bangalore-details-bangalore.html" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 card-shadow space-y-2">
-                    <img src="https://placehold.co/100x60/0066CC/FFFFFF?text=MMT" alt="Book on MakeMyTrip" width="100" height="60" class="rounded-md">
+                <a href="https://www.makemytrip.com/hotels/avm_comforts_inn_bangalore-details-bangalore.html" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center btn-gradient text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 ease-in-out card-shadow transform hover:scale-105">
+                    <img src="https://placehold.co/100x60/0066CC/FFFFFF?text=MMT" alt="Book on MakeMyTrip" width="100" height="60" class="rounded-md mb-2">
                     <span>MakeMyTrip</span>
+                </a>
+                <!-- Goibibo Thumbnail -->
+                <a href="https://www.goibibo.com/hotels/avm-comforts-inn-bangalore-hotel-in-bangalore-7487299666364161655/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center btn-gradient text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 ease-in-out card-shadow transform hover:scale-105">
+                    <img src="https://placehold.co/100x60/FF6600/FFFFFF?text=Goibibo" alt="Book on Goibibo" width="100" height="60" class="rounded-md mb-2">
+                    <span>Goibibo</span>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Contact Us Section (Elegant) -->
-    <section id="contact" class="container mx-auto px-4 py-16 md:py-24"> <!-- Reverted vertical padding -->
+    <section id="contact" class="container mx-auto px-4 py-16 md:py-24">
         <h2 class="text-3xl md:text-4xl font-bold text-center text-amber-800 mb-12 font-playfair">Connect With Us</h2>
         <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl card-shadow text-center">
             <p class="text-lg text-gray-700 mb-8">We're always ready to assist you. Reach out through your preferred method:</p>
@@ -320,6 +344,7 @@
                 <a href="#booking" class="hover:text-amber-400 transition duration-300">Book Now</a>
                 <a href="#contact" class="hover:text-amber-400 transition duration-300">Contact</a>
             </div>
+            <!-- The original index.html had the social media links commented out, so keeping them commented as per reference -->
             <!-- <div class="flex justify-center space-x-6 mb-6">
                 <a href="#" class="text-stone-400 hover:text-white transition duration-300">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z" clip-rule="evenodd"></path></svg>
